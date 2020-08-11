@@ -9,6 +9,7 @@ public class FlowChartIteration_2 {
             } else {
                 System.out.println("*");
             }
+
             a++;
         }
     }
