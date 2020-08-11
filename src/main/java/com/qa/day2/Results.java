@@ -15,6 +15,8 @@ package com.qa.day2;
 // they would have an overall grade of 85.3% (Pass) but in this case the student would fail because their physics grade is 54% (Fail)
 // Expand the above so that the message that is displayed varies depending on the number of subjects that they have failed.
 
+
+
 public class Results {
 
     private static final int physics = 149;
@@ -36,8 +38,9 @@ public class Results {
 
     public static void main(String[] args)
     {
+
         //int method1();
-        System.out.println("These are your scores for ");
+
         //int method2();
 
     }
