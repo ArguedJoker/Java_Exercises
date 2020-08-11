@@ -16,15 +16,24 @@ package com.qa.day2;
 // Expand the above so that the message that is displayed varies depending on the number of subjects that they have failed.
 
 
+import java.util.Scanner;
+
 public class Results {
 
-    public static void main (String[] arg) {
-        int Physics = 85;
-        int Biology = 90;
-        int Chemistry = 73;
-        int total = Physics + Biology + Chemistry;
-        int percentage = (total * 100) / 450;
-        System.out.println(total);
-        System.out.println(percentage);
+    private static int physics = 149;
+    private static int chemistry = 132;
+    private static int biology = 144;
+    private static int totalMarks = physics + chemistry + biology;
+    private static int Percentage = (totalMarks * 100)/450;
+
+    public static void main(String[] args)
+    {
+     //   Student student = new Student();
+      //  student.name = "Rohan";
+      //  student.physics =
+
+
     }
+
+
 }
