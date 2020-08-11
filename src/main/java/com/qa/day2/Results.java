@@ -25,24 +25,25 @@ public class Results {
     private static final int totalMarks = physics + chemistry + biology;
     private static final int Percentage = (totalMarks * 100)/450;
 
-    public static void main(String[] args)
-    {
-        method1();
-        method2();
-    }
-
     public static void method1() {
-        System.out.println("Physics mark:" + " " + physics);
-        System.out.println("Chemistry mark:" + " " + chemistry);
-        System.out.println("Biology mark:" + " " + biology);
-        System.out.println("Total marks:" + " " + totalMarks + "/450");
+        System.out.println(physics);
+        System.out.println(chemistry);
+        System.out.println(biology);
+        System.out.println(totalMarks);
     }
 
     public static void method2() {
-        System.out.println("Your average mark as a percentage:" + " " + Percentage);
+        System.out.println(Percentage);
     }
 
+    public static void main(String[] args)
+    {
 
+        //int method1();
+
+        //int method2();
+
+    }
 
 
 }
