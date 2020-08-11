@@ -16,8 +16,6 @@ package com.qa.day2;
 // Expand the above so that the message that is displayed varies depending on the number of subjects that they have failed.
 
 
-import java.util.Scanner;
-
 public class Results {
 
     private static int physics = 149;
@@ -28,11 +26,19 @@ public class Results {
 
     public static void main(String[] args)
     {
-     //   Student student = new Student();
-      //  student.name = "Rohan";
-      //  student.physics =
+        method1();
+        method2();
+    }
 
+    public static void method1() {
+        System.out.println("Physics marks:" + " " + physics);
+        System.out.println("Chemistry marks:" + " " + chemistry);
+        System.out.println("Biology marks:" + " " + biology);
+        System.out.println("Total marks:" + " " + totalMarks + "/450");
+    }
 
+    public static void method2() {
+        System.out.println("Average mark (as percentage):" + " " + Percentage);
     }
 
 
