@@ -23,13 +23,21 @@ public class Results {
     private static final int totalMarks = physics + chemistry + biology;
     private static final int Percentage = (totalMarks * 100)/450;
 
-    static int method1() {
-      return totalMarks;
-    };
+    public static void method1() {
+        System.out.println(physics);
+        System.out.println(chemistry);
+        System.out.println(biology);
+        System.out.println(totalMarks);
+    }
+
+    public static void method2() {
+        System.out.println(Percentage);
+    }
 
     public static void main(String[] args)
     {
         //int method1();
+        System.out.println("These are your scores for ");
         //int method2();
 
     }
