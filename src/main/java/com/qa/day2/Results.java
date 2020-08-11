@@ -22,7 +22,7 @@ public class Results {
     private static int chemistry = 132;
     private static int biology = 144;
     private static int totalMarks = physics + chemistry + biology;
-    private static int Percentage = (totalMarks * 100)/450;
+    private static int percentage = (totalMarks * 100)/450;
 
     public static void main(String[] args)
     {
@@ -38,8 +38,16 @@ public class Results {
     }
 
     public static void method2() {
-        System.out.println("Average mark (as percentage):" + " " + Percentage);
+        System.out.println("Average mark (as percentage):" + " " + percentage);
+        if (percentage > 60) {
+            System.out.println("You Passed! Well Done!");
+            } else {
+            System.out.println("Unfortunately you failed. Better Luck next time!");
+            }
+
+        }
+
     }
 
 
-}
+
