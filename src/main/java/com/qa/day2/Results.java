@@ -15,23 +15,22 @@ package com.qa.day2;
 // they would have an overall grade of 85.3% (Pass) but in this case the student would fail because their physics grade is 54% (Fail)
 // Expand the above so that the message that is displayed varies depending on the number of subjects that they have failed.
 
-
-import java.util.Scanner;
-
 public class Results {
 
-    private static int physics = 149;
-    private static int chemistry = 132;
-    private static int biology = 144;
-    private static int totalMarks = physics + chemistry + biology;
-    private static int Percentage = (totalMarks * 100)/450;
+    private static final int physics = 149;
+    private static final int chemistry = 132;
+    private static final int biology = 144;
+    private static final int totalMarks = physics + chemistry + biology;
+    private static final int Percentage = (totalMarks * 100)/450;
+
+    static int method1() {
+      return totalMarks;
+    };
 
     public static void main(String[] args)
     {
-     //   Student student = new Student();
-      //  student.name = "Rohan";
-      //  student.physics =
-
+        //int method1();
+        //int method2();
 
     }
 
