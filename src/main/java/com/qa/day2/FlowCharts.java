@@ -6,22 +6,25 @@ import java.util.Scanner;
 
 public class FlowCharts {
     public static void main(String[] arg) {
-        Scanner input1 = new Scanner(System.in);
+        method1(2, 3);
+    }
+
+    public static int method1(int a, int b) {
+        /*Scanner input1 = new Scanner(System.in);
         System.out.println("Enter a number: ");
         String number1 = input1.nextLine();
         int a = Integer.parseInt(number1);
-        System.out.println("You chose: " + a);
-
         Scanner input2 = new Scanner(System.in);
         System.out.println("Enter a number: ");
         String number2 = input2.nextLine();
-        int b = Integer.parseInt(number2);
-        System.out.println("You Chose: " + b);
+        int b = Integer.parseInt(number2);*/
 
-        if (a > b)
+        if (a > b) {
             System.out.println(a + b);
-        else {
+            return a + b;
+        }else{
             System.out.println(a * b);
+            return a * b;
         }
     }
 }
