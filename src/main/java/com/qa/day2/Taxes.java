@@ -12,9 +12,11 @@ package com.qa.day2;
 // 45,000+ : 25% tax
 // Finally combine the 2 methods so that the second method utilizes the first method to return the correct result.
 
+import java.util.Scanner;
 
 public class Taxes {
     public static void main (String[] arg) {
+        Scanner salary = new Scanner(System.in);
 
     }
 }
