@@ -9,14 +9,15 @@ public class Results {
     private static final int biology = 144;
     private static final int biologyPercentage = (biology * 100) / 150;
     private static final int totalMarks = physics + chemistry + biology;
+    private static final int[] studentMarks = {physics, chemistry, biology, totalMarks};
+    private static final int[] studentPercent = {physicsPercentage, chemistryPercentage, biologyPercentage};
 
     public static void main(String[] args) {
-        method1();
-        method2();
+        method1(149, 132, 144, 425);
+        method2(99, 88, 96);
     }
 
-    public static void method1() {
-
+    public static int[] method1(int physics, int chemistry, int biology, int totalMarks) {
         System.out.println("Physics marks:" + " " + physics);
         if (physicsPercentage > 60) {
             System.out.println("You passed physics! Well Done!");
@@ -39,9 +40,10 @@ public class Results {
         }
 
         System.out.println("Total marks:" + " " + totalMarks + "/450");
+        return studentMarks;
     }
 
-    public static void method2() {
+    public static int[] method2(int physicsPercentage, int chemistryPercentage, int biologyPercentage) {
         int percentage = (totalMarks * 100) / 450;
         System.out.println("Average mark (as percentage):" + " " + percentage);
         if (physicsPercentage > 60) {
@@ -54,5 +56,6 @@ public class Results {
             }
 
         }
+        return studentPercent;
     }
 }

@@ -25,7 +25,7 @@ public class BlackJack {
         return a;
     }
 
-    public static int method2( int b){
+    public static int method2(int b){
         /*Scanner input2 = new Scanner(System.in);
         System.out.println("Enter your second number which must also be over 0: ");
         String number2 = input2.nextLine();

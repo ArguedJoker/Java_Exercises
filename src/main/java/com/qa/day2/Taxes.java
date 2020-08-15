@@ -16,7 +16,9 @@ import java.util.Scanner;
 
 public class Taxes {
     public static void main (String[] arg) {
-        Scanner salary = new Scanner(System.in);
-
+        //method1();
+        //method2();
     }
+
+
 }

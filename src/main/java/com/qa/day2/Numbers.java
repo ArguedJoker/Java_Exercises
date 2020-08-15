@@ -8,6 +8,6 @@ package com.qa.day2;
 
 public class Numbers {
     public static void main (String[] arg) {
-
+        //method1();
     }
 }
