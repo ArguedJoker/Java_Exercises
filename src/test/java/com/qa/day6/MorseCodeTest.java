@@ -17,4 +17,12 @@ public class MorseCodeTest {
 
     }
 
+    @Test
+    public void method2Test() {
+
+        MorseCode morseCode = new MorseCode();
+
+        assertEquals(morseCode.method2("...././.-../.-../---"), "hello");
+    }
+
 }
