@@ -6,25 +6,20 @@ public class EmployeeSalary {
     // output employee's gross yearly salary (before tax)
     // stretch goal - add input for vacation days (employee does not get paid for vacation days taken
 
-    public static double employeeWeeklySalary() {
-        double totalHoursPerDay = 8;
-        double totalHoursPerWeek = totalHoursPerDay * 5;
-        double payPerHour = 21.00;
+    public static double employeeWeeklySalary(double totalHoursPerWeek, double payPerHour) {
         double totalPayPerWeek = totalHoursPerWeek * payPerHour;
 
         return totalPayPerWeek;
     }
 
-    public static double employeeVacation() {
-        int numberOfDaysVacation = 5;
-        double normalEmployeeDayHours = 8;
+    public static double employeeVacation(int numberOfDaysVacation, double normalEmployeeDayHours) {
         double totalTimeVacationUnpaid = numberOfDaysVacation * normalEmployeeDayHours;
 
         return totalTimeVacationUnpaid;
     }
 
     public static void main(String[] args) {
-        double employeeSalary = employeeWeeklySalary() * 4 * 12 - employeeVacation();
+        double employeeSalary = employeeWeeklySalary(40, 21) * 4 * 12 - employeeVacation(5, 8);
         System.out.println(employeeSalary);
     }
 }
